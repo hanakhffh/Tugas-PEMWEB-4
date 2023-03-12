@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        h1 {
+            color: #333333;
+            text-align: center;
+            margin-top: 50px;
+        }
+        
+        p {
+            color: #666666;
+            font-size: 18px;
+            text-align: justify;
+            margin: 20px 0;
+            line-height: 1.5;
+        }
+        
+        button {
+            background-color: #89d0ce;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+        
+        button:hover {
+            background-color: #004d4d;
+        }
+        
+        img {
+            border: 5px solid #ffffff;
+            box-shadow: 5px 5px 10px #cccccc;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+        
+        img:hover {
+            box-shadow: 10px 10px 20px #999999;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".sembunyi1").click(function () { $("#foto1").hide("slow") });
+            $(".tampil1").click(function () { $("#foto1").show("slow") });
+            $(".sembunyi2").click(function () { $("#foto2").hide("slow") });
+            $(".tampil2").click(function () { $("#foto2").show("slow") });
+           
+
+        });
+    </script>
+</head>
+
+<body>
+    <button class="sembunyi1">Sembunyikan</button>
+    <button class="tampil1">Tampilkan</button>
+    <p><img src="upn.png" id="foto1" width="300px" height="300px"></p>
+    <button class="sembunyi2">Sembunyikan</button>
+    <button class="tampil2">Tampilkan</button>
+    <p><img src="UPNJATIM.jpg" id="foto2" width="300px" height="300px"></p>
+</body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script type="text/javascript" src="jquery-3.6.3.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(".a").dblclick(function () {
+                $(".a").addClass("b");
+            });
+            $(".e").dblclick(function () {
+                $(".e").addClass("b");
+            });
+            $(".f").dblclick(function () {
+                $(".f").addClass("b");
+            });
+            $(".g").dblclick(function () {
+                $(".g").addClass("b");
+            });
+        });
+    </script>
+    <style type="text/css">
+        body div {
+            float: left;
+            cursor: pointer;
+            background-color: yellow;
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+        }
+
+        .b {
+            background-color: red;
+            height: 100px;
+            width: 100px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    Klik 2x pada setiap kotak untuk mengubah warnanya
+    <br>
+    <div class="a"></div>
+    <div class="e"></div>
+    <div class="f"></div>
+    <div class="g"></div>
+</body>
+
+</html>
